@@ -12,10 +12,7 @@ export class FeatureDashboardListAdapter {
   readonly action$: Observable<Signal<string> | null> =
     this.dashboardsStore.settingsActions$;
 
-  constructor(
-    private readonly dashboardsStore: DashboardsStore,
-    private readonly settingsState: SettingsStore
-  ) {}
+  constructor(private readonly dashboardsStore: DashboardsStore) {}
 
   showSettings(): void {
     this.dashboardsStore.showDashboardSettings();
