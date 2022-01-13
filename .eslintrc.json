@@ -24,10 +24,6 @@
               {
                 "sourceTag": "domain:public",
                 "onlyDependOnLibsWithTags": [
-                  "domain:dashboards-public",
-                  "domain:settings-public",
-                  "domain:sidebar-public",
-                  "domain:spaces-public",
                   "domain:public"
                 ]
               },
