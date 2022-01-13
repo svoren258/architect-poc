@@ -31,19 +31,6 @@
                 "sourceTag": "domain:dashboards-private",
                 "onlyDependOnLibsWithTags": [
                   "domain:dashboards-private",
-                  "domain:settings-public",
-                  "domain:sidebar-public",
-                  "domain:spaces-public",
-                  "domain:public"
-                ]
-              },
-              {
-                "sourceTag": "domain:dashboards-public",
-                "onlyDependOnLibsWithTags": [
-                  "domain:dashboards-private",
-                  "domain:sidebar-public",
-                  "domain:spaces-public",
-                  "domain:settings-public",
                   "domain:public"
                 ]
               },
@@ -51,19 +38,6 @@
                 "sourceTag": "domain:settings-private",
                 "onlyDependOnLibsWithTags": [
                   "domain:settings-private",
-                  "domain:dashboards-public",
-                  "domain:sidebar-public",
-                  "domain:spaces-public",
-                  "domain:public"
-                ]
-              },
-              {
-                "sourceTag": "domain:settings-public",
-                "onlyDependOnLibsWithTags": [
-                  "domain:settings-private",
-                  "domain:sidebar-public",
-                  "domain:spaces-public",
-                  "domain:dashboards-public",
                   "domain:public"
                 ]
               },
@@ -71,19 +45,6 @@
                 "sourceTag": "domain:spaces-private",
                 "onlyDependOnLibsWithTags": [
                   "domain:spaces-private",
-                  "domain:dashboards-public",
-                  "domain:sidebar-public",
-                  "domain:settings-public",
-                  "domain:public"
-                ]
-              },
-              {
-                "sourceTag": "domain:spaces-public",
-                "onlyDependOnLibsWithTags": [
-                  "domain:spaces-private",
-                  "domain:sidebar-public",
-                  "domain:settings-public",
-                  "domain:dashboards-public",
                   "domain:public"
                 ]
               },
@@ -91,25 +52,13 @@
                 "sourceTag": "domain:sidebar-private",
                 "onlyDependOnLibsWithTags": [
                   "domain:sidebar-private",
-                  "domain:dashboards-public",
-                  "domain:spaces-public",
-                  "domain:settings-public",
                   "domain:public"
                 ]
               },
               {
-                "sourceTag": "domain:sidebar-public",
+                "sourceTag": "type:feature",
                 "onlyDependOnLibsWithTags": [
-                  "domain:sidebar-private",
-                  "domain:spaces-public",
-                  "domain:settings-public",
-                  "domain:dashboards-public",
-                  "domain:public"
-                ]
-              },
-              {
-                "sourceTag": "type:ui",
-                "onlyDependOnLibsWithTags": [
+                  "type:feature",
                   "type:data",
                   "type:domain",
                   "type:ui",
@@ -122,8 +71,15 @@
                   "type:domain",
                   "type:data",
                   "type:state",
-                  "type:util",
-                  "type:ui"
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": [
+                  "type:domain",
+                  "type:ui",
+                  "type:util"
                 ]
               },
               {
