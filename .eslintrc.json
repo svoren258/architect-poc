@@ -28,30 +28,30 @@
                 ]
               },
               {
-                "sourceTag": "domain:dashboards-private",
+                "sourceTag": "domain:dashboards",
                 "onlyDependOnLibsWithTags": [
-                  "domain:dashboards-private",
+                  "domain:dashboards",
                   "domain:public"
                 ]
               },
               {
-                "sourceTag": "domain:settings-private",
+                "sourceTag": "domain:settings",
                 "onlyDependOnLibsWithTags": [
-                  "domain:settings-private",
+                  "domain:settings",
                   "domain:public"
                 ]
               },
               {
-                "sourceTag": "domain:spaces-private",
+                "sourceTag": "domain:spaces",
                 "onlyDependOnLibsWithTags": [
-                  "domain:spaces-private",
+                  "domain:spaces",
                   "domain:public"
                 ]
               },
               {
-                "sourceTag": "domain:sidebar-private",
+                "sourceTag": "domain:domain:sidebar",
                 "onlyDependOnLibsWithTags": [
-                  "domain:sidebar-private",
+                  "domain:domain:sidebar",
                   "domain:public"
                 ]
               },
@@ -70,7 +70,7 @@
                 "onlyDependOnLibsWithTags": [
                   "type:domain",
                   "type:data",
-                  "type:state",
+                  "type:shared-state",
                   "type:util"
                 ]
               },
@@ -83,7 +83,7 @@
                 ]
               },
               {
-                "sourceTag": "type:state",
+                "sourceTag": "type:shared-state",
                 "onlyDependOnLibsWithTags": [
                   "type:domain",
                   "type:data",

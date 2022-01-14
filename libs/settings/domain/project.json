@@ -22,5 +22,5 @@
       }
     }
   },
-  "tags": ["domain:settings-private", "type:domain"]
+  "tags": ["domain:settings", "type:domain"]
 }

@@ -22,7 +22,7 @@ function dddSharedStateRules(domain) {
               onlyDependOnLibsWithTags: ['domain:public'],
             },
             {
-              sourceTag: 'type:state',
+              sourceTag: 'type:shared-state',
               onlyDependOnLibsWithTags: [
                 'type:domain',
                 'type:data',

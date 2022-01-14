@@ -22,5 +22,5 @@
       }
     }
   },
-  "tags": ["domain:public", "type:state"]
+  "tags": ["domain:public", "type:shared-state"]
 }
