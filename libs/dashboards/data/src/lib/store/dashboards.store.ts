@@ -14,16 +14,21 @@ export class DashboardsStore {
       action.payload === SettingsType.DASHBOARDS ? action : null
     )
   );
-  readonly dashboards$: Observable<DashboardModel[]> = this.dashboardResource.getDashboards();
+  readonly dashboards$: Observable<DashboardModel[]> =
+    this.dashboardResource.getDashboards();
 
   constructor(
     private readonly settingsStore: SettingsSharedStore,
     private readonly dashboardResource: DashboardResource
   ) {
-    this.settingsStore.actions$.pipe(
-      filter(action => action.payload === SettingsType.DASHBOARDS),
-      concatMap((action) => this.dashboardResource.postDashboard(action.payload as any))
-    ).subscribe();
+    this.settingsStore.actions$
+      .pipe(
+        filter((action) => action.payload === SettingsType.DASHBOARDS),
+        concatMap((action) =>
+          this.dashboardResource.postDashboard(action.payload as any)
+        )
+      )
+      .subscribe();
   }
 
   showDashboardSettings(): void {

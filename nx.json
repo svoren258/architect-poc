@@ -1,7 +1,7 @@
 {
   "npmScope": "architect-poc",
   "affected": {
-    "defaultBase": "undefined"
+    "defaultBase": "origin/main"
   },
   "implicitDependencies": {
     "angular.json": "*",
@@ -12,7 +12,6 @@
     "tsconfig.base.json": "*"
   },
   "cli": {
-    "analytics": false,
     "defaultCollection": "@nrwl/angular"
   },
   "defaultProject": "architect-poc",
