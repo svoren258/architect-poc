@@ -22,6 +22,7 @@
     "update": "nx migrate @nrwl/workspace",
     "update:check": "ng update",
     "lint": "nx workspace-lint && ng lint",
+    "lint-all": "nx run-many --all --target=lint",
     "dep-graph": "nx dep-graph",
     "workspace-schematic": "nx workspace-schematic",
     "help": "nx help",
