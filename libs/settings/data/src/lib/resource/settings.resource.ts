@@ -1,9 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-// TODO: we need to discuss this. Do we need to introduce domain and shared-state to design-system?
-// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { MenuItem } from '@architect-poc/design-system/public/ui';
 import { SettingsType } from '@architect-poc/settings/domain';
+import { MenuItem } from '@architect-poc/utils';
 import { Observable, of } from 'rxjs';
 
 const SPACE_MENU_ITEMS_MOCK: MenuItem[] = [

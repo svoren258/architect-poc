@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, NgModule } from '@angular/core';
-import { MenuItem } from '../models/menu-item.model';
+import { MenuItem } from '@architect-poc/utils';
 
 @Component({
   selector: 'ds-menu-item',
